@@ -20,20 +20,19 @@
 			return 0;			
 		}
 
-		function throwMsg( count ){
-			console.log(count);
+		function throwMsg( count ){			
 			if(count == 0){
 				$scope.message = "Please enter data first";
-				
+				$scope.msgColor = "red";				
 			}
 			else if(count <= 3){				
 				$scope.message = "Enjoy!";				
+				$scope.msgColor = "green";				
 			}
 			else if(count > 3){
 				$scope.message = "Too much!"
-
+				$scope.msgColor = "green";
 			}
 		}
-
 	});
 })();
